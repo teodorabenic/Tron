@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" charset="utf-8"></script>
+    <title>TRON</title>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="logo"></div>
+        <div class="buttons-container">
+            <button class="start-button" id="btn">START</button>
+            <button class="scores" id="btn">SCORES</button>
+            <button class="rules" id="btn">RULES</button>
+        </div>
+        <div class="close-scoreborard hidden">
+            <p>PRESS ENTER TO EXIT</p>
+        </div>
+        <div class="close-rules hidden">
+            <p>DOUBLE CLICK TO EXIT</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <h2>LEVEL <span id="level">1</span></h2>
+                <div class="lifes"></div>
+        </div>
+        <div class="grid"></div>
+    </div>
+
+    <div id="readyModal" class="modal hidden">
+        <h3>READY!</h3>
+    </div>
+
+    <div id="gameOver" class="modal hidden">
+        <h4 style="color: red;">GAME OVER</h4>
+    </div>
+
+    <div class="registration-modal hidden">
+        <input type="text" id="username-input">
+        <button class="save-button" id="btn">SAVE</button>
+    </div>
+    <div class="scoreboard-div hidden"></div>
+    <div class="rules-div hidden">
+        <div>Our hero <img src="./img/tron.png"> TRON went into space in search of the Diamond of Truth.</div>
+        <div>To take the Diamond he must go through a maze in which is located a Space Guard.</div>
+        <div>Two of them <img src="./img/dipsy.png"> Dipsy and <img src="./img/lala.png"> Lala are in charge of guarding the
+            Diamond. </div>
+        <div>The other two <img src="./img/tinky.png"> Tinky and <img src="./img/po.png"> Po move through the maze and look for
+            TRON.</div>
+        <div>TRON has 3 lives. When the Space Guard catches TRON, he loses one life. When TRON loses all 3 lives, the
+            game is over.</div>
+        <div> Every time Throne catches the Diamond, he moves to the next level.</div>
+        <div> In each subsequent level, the Space Guard moves quickly through the maze, so TRON is easier to catch. </div>
+    </div>
+</body>
+
+
+
+</html>
